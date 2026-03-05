@@ -1,2 +1,3 @@
 # Live Demo <br/>
-https://lazarmilovanovic.github.io/ExpScrollSnapType/
+https://lazarmilovanovic.github.io/LazarMilovanovicPortfolio/
+
