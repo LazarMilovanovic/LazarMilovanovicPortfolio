@@ -230,7 +230,7 @@ section:nth-child(odd) {
   font-weight: 900;
   color: var(--text-primary);
   letter-spacing: -0.02em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
 }
@@ -454,7 +454,7 @@ section:nth-child(odd) {
   font-weight: 900;
   color: var(--text-primary);
   letter-spacing: -0.02em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
   align-self: center;
@@ -536,7 +536,7 @@ section:nth-child(odd) {
   font-weight: 900;
   color: var(--text-primary);
   letter-spacing: -0.02em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
 }
