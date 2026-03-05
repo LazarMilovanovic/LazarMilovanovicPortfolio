@@ -7,64 +7,51 @@
 :root {
   font-family: system-ui, Helvetica, Arial, sans-serif;
 
-  /* LIGHT VARIABLES */
-  /* Backgrounds */
   --bg-base: rgb(255, 252, 240);
   --bg-surface: rgb(255, 248, 220);
   --bg-elevated: rgb(255, 243, 190);
   --bg-overlay: rgb(255, 236, 153);
   --bg-active: rgb(242, 217, 108);
 
-  /* Borders */
   --border-subtle: rgb(255, 220, 100);
   --border-default: rgb(255, 196, 51);
   --border-strong: rgb(230, 160, 20);
 
-  /* Accents */
   --accent-primary: rgb(255, 165, 0);
   --accent-warm: rgb(203, 99, 1);
   --accent-sun: rgb(255, 200, 0);
   --accent-ember: rgb(230, 100, 5);
 
-  /* Text */
   --text-primary: rgb(60, 40, 10);
   --text-secondary: rgb(120, 80, 20);
   --text-muted: rgb(96, 61, 0);
   --text-inverse: rgb(255, 252, 240);
   --text-link: rgb(200, 100, 0);
 
-  /* Shadows */
   --shadow-sm: rgba(180, 120, 0, 0.1);
   --shadow-md: rgba(180, 120, 0, 0.2);
   --shadow-lg: rgba(180, 120, 0, 0.35);
 }
 
 .dark {
-  /* DARK VARIABLES */
-
-  /* Backgrounds */
   --bg-base: rgb(8, 14, 30);
   --bg-surface: rgb(12, 22, 48);
   --bg-elevated: rgb(18, 34, 70);
   --bg-overlay: rgb(25, 50, 100);
   --bg-active: rgb(30, 80, 180);
 
-  /* Borders */
   --border-subtle: rgb(30, 60, 110);
   --border-default: rgb(50, 100, 180);
   --border-strong: rgb(80, 150, 230);
 
-  /* Accents */
   --accent-primary: rgb(50, 130, 255);
 
-  /* Text */
   --text-primary: rgb(220, 235, 255);
   --text-secondary: rgb(150, 185, 230);
   --text-muted: rgb(80, 120, 180);
   --text-inverse: rgb(8, 14, 30);
   --text-link: rgb(100, 180, 255);
 
-  /* Shadows */
   --shadow-sm: rgba(0, 30, 80, 0.3);
   --shadow-md: rgba(0, 30, 80, 0.55);
   --shadow-lg: rgba(0, 10, 50, 0.8);
@@ -132,6 +119,10 @@ nav {
   bottom: 2px;
 }
 
+.theme-btn:hover {
+  transform: scale(0.9);
+}
+
 [data-title] {
   position: relative;
   cursor: pointer;
@@ -180,7 +171,6 @@ section:nth-child(odd) {
 /* /////////////////// */
 /* START HERO SECTION */
 /* ///////////////// */
-
 .hero {
   background-color: rgb(245, 150, 30);
 }
@@ -207,6 +197,10 @@ section:nth-child(odd) {
   align-items: center;
 }
 
+.hero__contact-me a:hover {
+  transform: scale(0.9);
+}
+
 .hero-img {
   height: 200px;
   width: 200px;
@@ -223,14 +217,16 @@ section:nth-child(odd) {
   margin: 0 10px;
   text-align: center;
 }
-
 /* ///////////////// */
 /* END HERO SECTION */
 /* /////////////// */
 
+/* //////////////////////////////// */
+/* START SKILLS & PROJECTS SECTION */
+/* ////////////////////////////// */
 .skills > h2 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-size: 2.2rem;
   font-weight: 900;
   color: var(--text-primary);
   letter-spacing: -0.02em;
@@ -362,7 +358,6 @@ section:nth-child(odd) {
     box-shadow 0.28s ease;
 }
 
-/* Image — top half */
 .proj-card__img-wrap {
   position: relative;
   height: 190px;
@@ -370,7 +365,6 @@ section:nth-child(odd) {
   background: var(--bg-elevated);
 }
 
-/* Body — bottom half */
 .proj-card__body {
   padding: 1.1rem 1.3rem 1.3rem;
   display: flex;
@@ -444,8 +438,6 @@ section:nth-child(odd) {
   transform: translateY(-2px);
 }
 
-/* START PROJECTS */
-/* CSS */
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -458,7 +450,7 @@ section:nth-child(odd) {
 
 .projects-section > h2 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-size: 2.2rem;
   font-weight: 900;
   color: var(--text-primary);
   letter-spacing: -0.02em;
@@ -531,12 +523,16 @@ section:nth-child(odd) {
     flex: 0 0 calc(50% - 0.6rem);
   }
 }
-/* END PROJECTS */
+/* ////////////////////////////// */
+/* END SKILLS & PROJECTS SECTION */
+/* //////////////////////////// */
 
-/* Section heading */
+/* ///////////////////////// */
+/* START EXPERIENCE SECTION */
+/* /////////////////////// */
 .experience > h2 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-size: 2.2rem;
   font-weight: 900;
   color: var(--text-primary);
   letter-spacing: -0.02em;
@@ -556,7 +552,6 @@ section:nth-child(odd) {
   border-radius: 2px;
 }
 
-/* Work card */
 .work-card {
   max-width: 555px;
   background: var(--bg-surface);
@@ -649,7 +644,6 @@ section:nth-child(odd) {
   font-weight: 300;
 }
 
-/* Education card */
 .edu-card {
   background: var(--bg-elevated);
   border: 1px solid var(--border-default);
@@ -712,8 +706,13 @@ section:nth-child(odd) {
     transform: translateY(0);
   }
 }
+/* /////////////////////// */
+/* END EXPERIENCE SECTION */
+/* ///////////////////// */
 
-/* ── Contact ── */
+/* ////////////////////// */
+/* START CONTACT SECTION */
+/* //////////////////// */
 .contact {
   gap: 0;
 }
@@ -830,7 +829,13 @@ section:nth-child(odd) {
   color: var(--text-link);
 }
 
-/* WebKit - Chrome, Edge, Safari */
+/* //////////////////// */
+/* END CONTACT SECTION */
+/* ////////////////// */
+
+/* ////////// */
+/* SCROLLBAR */
+/* //////// */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;

@@ -3,6 +3,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 const githubLogo = document.getElementById("github");
 const gitHubCarouselLogo = document.getElementById("gitHubCarouselImg");
 const changeThemeBtn = document.getElementById("themeToggle");
+const typingEl = document.getElementById("typing-text");
 
 const isDark = JSON.parse(localStorage.getItem("darkMode"));
 
@@ -47,3 +48,14 @@ function setActiveLink() {
 window.addEventListener("scroll", setActiveLink);
 
 setActiveLink();
+
+const text = "I'm Frontend Developer";
+let i = 0;
+function type() {
+  if (i < text.length) {
+    typingEl.textContent += text[i];
+    i++;
+    setTimeout(type, 80);
+  }
+}
+type();
